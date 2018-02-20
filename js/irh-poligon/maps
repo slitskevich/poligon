@@ -1,0 +1,9 @@
+var map = {
+    "EUR": "0.01",
+    "USD": "0.8"
+}
+var rewards = [];
+Object.keys(map).forEach(function(currency) {
+  rewards.push({amount: map[currency], currency: currency});
+});
+print(rewards);

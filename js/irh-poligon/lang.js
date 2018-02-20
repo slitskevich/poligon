@@ -1,0 +1,15 @@
+var lang = 1;//'de';
+var env = 'en de';
+  console.log("request.language: '", lang + "'");
+  console.log("env.Languages: '" + lang + "'");
+  console.log("search result: ", env.search(lang));
+  var c1 = (typeof lang !== 'string');
+  var c21 = typeof lang === 'string';
+  var c22 = (lang === '' || lang === ' ' || env.search(lang) === -1);
+  var c2 = c21 && c22;
+  var c = c1 || c22;
+  console.log("condition c1: ", c1);
+  console.log("condition c21: ", c21);
+  console.log("condition c22: ", c22);
+  console.log("condition c2: ", c2);
+  console.log("condition c: ", c);

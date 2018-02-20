@@ -1,0 +1,19 @@
+curl https://api-3t.sandbox.paypal.com/nvp -s --insecure -d USER=germany.sandbox_api1.irewardhealth.com -d PWD=G2EAFW634BRVMQ2D -d SIGNATURE=AFcWxV21C7fd0v3bYYYRCpSSRl31AZqfsyZ9XqVLdM90kH-PBKMsEDzd -d METHOD=MassPay -d VERSION=90 -d RECEIVERTYPE=EmailAddress -d CURRENCYCODE=EUR -d L_EMAIL0=info@irewardhealth.com -d L_AMT0=0.01
+
+
+TIMESTAMP=2017%2d03%2d31T10%3a51%3a05Z&CORRELATIONID=3a5f181825924&ACK=Failure&VERSION=90&BUILD=31674279&L_ERRORCODE0=10321&L_SHORTMESSAGE0=Insufficient%20funds&L_LONGMESSAGE0=The%20account%20does%20not%20hav
+
+
+
+
+TIMESTAMP=2017%2d03%2d31T10%3a52%3a19Z&CORRELATIONID=31c3cfab4546c&ACK=Success&VERSION=90&BUILD=31674279
+
+
+
+key: fs.readFileSync('client-key.pem'), 
+cert: fs.readFileSync('client-crt.pem'), 
+ca: fs.readFileSync('ca-crt.pem') }; 
+
+curl https://api.sandbox.paypal.com/nvp -v -d USER=germany.sandbox_api1.irewardhealth.com -d PWD=G2EAFW634BRVMQ2D -d METHOD=MassPay -d VERSION=90 -d RECEIVERTYPE=EmailAddress -d CURRENCYCODE=EUR -d L_EMAIL0=info@irewardhealth.com -d L_AMT0=0.01
+curl https://api.sandbox.paypal.com/nvp -v --cert ./paypal_cert.p12:314 -d USER=germany.sandbox_api1.irewardhealth.com -d PWD=G2EAFW634BRVMQ2D -d METHOD=MassPay -d VERSION=90 -d RECEIVERTYPE=EmailAddress -d CURRENCYCODE=EUR -d L_EMAIL0=info@irewardhealth.com -d L_AMT0=0.01
+curl https://api.sandbox.paypal.com/nvp -v --cert ./paypal_cert.p12:314 -d USER=info_api1.irewardhealth.com -d PWD=EYMY7VGTWHYC45SZ -d METHOD=MassPay -d VERSION=90 -d RECEIVERTYPE=EmailAddress -d CURRENCYCODE=USD -d L_EMAIL0=info@irewardhealth.com -d L_AMT0=0.01

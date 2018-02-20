@@ -1,0 +1,10 @@
+{
+    "latestLogIn": {
+        "AttributeValueList": [
+            {
+                "N": 1
+            }
+        ],
+        "ComparisonOperator": "EQ"
+    }
+}

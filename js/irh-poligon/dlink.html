@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+
+function tryOpenApp() {
+                var iframe = document.createElement("iframe");
+                iframe.style.border = "none";
+                iframe.style.width = "1px";
+                iframe.style.height = "1px";
+                iframe.src = "irh://";
+                document.body.appendChild(iframe);
+                alert("tried");
+    }
+    
+        function codeAddress() {
+            alert('ok');
+            try {
+                window.location = "irh://";
+            } catch(e) {
+            }            
+        }
+        
+        </script>
+    </head>
+    <body onload="codeAddress()">
+    
+    </body>
+</html>

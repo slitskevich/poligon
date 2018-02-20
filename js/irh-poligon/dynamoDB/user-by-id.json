@@ -1,0 +1,10 @@
+{
+    "userId": {
+        "AttributeValueList": [
+            {
+                "S": "eu-central-1:7175692a-7851-4990-9ff9-8b86031d90fb"
+            }
+        ],
+        "ComparisonOperator": "EQ"
+    }
+}
