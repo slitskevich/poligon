@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "Test DynamoDB access",
+  "main": "load.js",
+  "directories": {},
+  "scripts": {},
+  "author": "sl",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "aws-sdk-mock": "^1.7.0"
+  },
+  "dependencies": {
+    "joi": "^13.0.1",
+    "aws-sdk": "2.181.0",
+    "sinon": "4.4.2",
+    "assert": "1.4.1",
+    "vogels": "^2.2.0",
+    "rewire": "3.0.2"
+  }
+}
