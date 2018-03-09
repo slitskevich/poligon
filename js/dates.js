@@ -11,3 +11,5 @@ console.log(`month name: ${longName}`);
 console.log(`last month: ${lastMonth.getMonth()} ${lastMonth.getFullYear()}`);
 console.log(`start: ${monthStart.getTime()}`);
 console.log(`end: ${monthEnd.getTime()}`);
+
+console.log(`json date: ${(new Date()).toJSON()}`)
